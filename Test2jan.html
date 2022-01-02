@@ -1,0 +1,65 @@
+<html >
+<head>
+   
+    <title>Gallery</title>
+    <style>
+        .gallery{
+          display:flex;
+          max-width: 1200px;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-left: 10%;
+          
+          
+           align-items: center;
+        }
+        img{
+            max-width: 350px;
+            height: 300px;
+            padding: 10px;
+            border-radius: 20px;
+            
+        }
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img:hover{
+            opacity: 0.5;
+            cursor: pointer;
+           
+        }
+  </style>
+    <script>
+        function fn(){
+           
+           
+            var items=document.getElementsByClassName("item");
+            items.style.height="500px";
+        }
+           
+
+        
+        
+
+    </script>
+</head>
+<body>
+    <section>
+        <h1>Geekster Gallery</h1>
+    </section>
+    <section class="gallery">
+       
+       
+        <img  onclick="fn()" class="item" src="https://geekster.in/images/mentors/temp/chirag-goel.webp" alt="image">
+        <img   class="item" src="https://geekster.in/images/mentors/temp/vikas-ranjan.webp" alt="image">
+        <img onclick="fn()" class="item" src="https://geekster.in/images/mentors/temp/bittoo-aggarwal.webp" alt="image">
+        <img  onclick="fn()" class="item" src="https://geekster.in/images/mentors/temp/gurshaan-singh.webp" alt="image">
+        <img  onclick="fn()" class="item"src="https://geekster.in/images/mentors/temp/rajat-jain.webp" alt="image">
+        <img  onclick="fn()" class="item"src="https://geekster.in/images/mentors/temp/akshay-limaye.webp" alt="image">
+    </section>
+    
+</body>
+</html>
